@@ -1,0 +1,93 @@
+\BOOKMARK [1][-]{section.0}{Report Overview}{}% 1
+\BOOKMARK [1][-]{section.1}{System Overview}{}% 2
+\BOOKMARK [2][-]{subsection.1.1}{Net Thread}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.2}{Request Queue}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.3}{Worker Threads}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Handling SET Requests}{subsection.1.3}% 6
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Handling GET requests}{subsection.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.4}{Request Object}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.5}{utils}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.6}{Logging Infrastructure}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.7}{Load Distribution Among Memcached Servers}{section.1}% 11
+\BOOKMARK [1][-]{section.2}{Baseline without Middleware}{}% 12
+\BOOKMARK [2][-]{subsection.2.1}{One Server}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Commands}{subsection.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Experimental Configuration}{subsection.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Plots}{subsection.2.1}% 16
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Explanation}{subsection.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.2}{Two Servers}{section.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Commands}{subsection.2.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Experimental Configuration}{subsection.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Plots}{subsection.2.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Explanation}{subsection.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.3}{Summary}{section.2}% 23
+\BOOKMARK [1][-]{section.3}{Baseline with Middleware}{}% 24
+\BOOKMARK [2][-]{subsection.3.1}{One Middleware}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Commands}{subsection.3.1}% 26
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Experimental Configuration}{subsection.3.1}% 27
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Plots}{subsection.3.1}% 28
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Explanation}{subsection.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.2}{Two Middlewares}{section.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Commands}{subsection.3.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Experimental Configuration}{subsection.3.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Plots}{subsection.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Explanation}{subsection.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.3}{Summary}{section.3}% 35
+\BOOKMARK [1][-]{section.4}{Throughput for Writes}{}% 36
+\BOOKMARK [2][-]{subsection.4.1}{Full System}{section.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Commands}{subsection.4.1}% 38
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Experimental Configuration}{subsection.4.1}% 39
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Plots}{subsection.4.1}% 40
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Explanation}{subsection.4.1}% 41
+\BOOKMARK [2][-]{subsection.4.2}{Summary}{section.4}% 42
+\BOOKMARK [1][-]{section.5}{Gets and Multi-gets}{}% 43
+\BOOKMARK [2][-]{subsection.5.1}{Sharded Case}{section.5}% 44
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Commands}{subsection.5.1}% 45
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Experimental Configuration}{subsection.5.1}% 46
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Plots}{subsection.5.1}% 47
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Explanation}{subsection.5.1}% 48
+\BOOKMARK [2][-]{subsection.5.2}{Non-sharded Case}{section.5}% 49
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Commands}{subsection.5.2}% 50
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Experimental Configuration}{subsection.5.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Plots}{subsection.5.2}% 52
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Explanation}{subsection.5.2}% 53
+\BOOKMARK [2][-]{subsection.5.3}{Histogram}{section.5}% 54
+\BOOKMARK [2][-]{subsection.5.4}{Summary}{section.5}% 55
+\BOOKMARK [1][-]{section.6}{2K Analysis}{}% 56
+\BOOKMARK [2][-]{subsection.6.1}{Experiment Overview}{section.6}% 57
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Variables}{subsection.6.1}% 58
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Experimental Configuration}{subsection.6.1}% 59
+\BOOKMARK [2][-]{subsection.6.2}{Write-Only Loads}{section.6}% 60
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Throughput}{subsection.6.2}% 61
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Latency}{subsection.6.2}% 62
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Discussion}{subsection.6.2}% 63
+\BOOKMARK [2][-]{subsection.6.3}{Read-Only Loads}{section.6}% 64
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Throughput}{subsection.6.3}% 65
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Latency}{subsection.6.3}% 66
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Discussion}{subsection.6.3}% 67
+\BOOKMARK [2][-]{subsection.6.4}{Read-Write Loads}{section.6}% 68
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Throughput}{subsection.6.4}% 69
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Latency}{subsection.6.4}% 70
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Discussion}{subsection.6.4}% 71
+\BOOKMARK [1][-]{section.7}{Queuing Model}{}% 72
+\BOOKMARK [2][-]{subsection.7.1}{M/M/1}{section.7}% 73
+\BOOKMARK [3][-]{subsubsection.7.1.1}{WT 8}{subsection.7.1}% 74
+\BOOKMARK [3][-]{subsubsection.7.1.2}{WT 16}{subsection.7.1}% 75
+\BOOKMARK [3][-]{subsubsection.7.1.3}{WT 32}{subsection.7.1}% 76
+\BOOKMARK [3][-]{subsubsection.7.1.4}{WT 64}{subsection.7.1}% 77
+\BOOKMARK [3][-]{subsubsection.7.1.5}{Discussions}{subsection.7.1}% 78
+\BOOKMARK [2][-]{subsection.7.2}{M/M/m}{section.7}% 79
+\BOOKMARK [3][-]{subsubsection.7.2.1}{WT 16, Num VC = 36, Under-saturation}{subsection.7.2}% 80
+\BOOKMARK [3][-]{subsubsection.7.2.2}{WT 16, Num VC = 72, Saturation}{subsection.7.2}% 81
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Discussions}{subsection.7.2}% 82
+\BOOKMARK [2][-]{subsection.7.3}{Network of Queues}{section.7}% 83
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Parameters of the Model}{subsection.7.3}% 84
+\BOOKMARK [1][-]{appendix.A}{General Notes on Experimental Setup}{}% 85
+\BOOKMARK [2][-]{subsection.A.1}{VM Allocation and Deallocation}{appendix.A}% 86
+\BOOKMARK [2][-]{subsection.A.2}{Network Latencies}{appendix.A}% 87
+\BOOKMARK [2][-]{subsection.A.3}{Pre-populating memcached servers}{appendix.A}% 88
+\BOOKMARK [2][-]{subsection.A.4}{Performance Monitoring \(dstat\)}{appendix.A}% 89
+\BOOKMARK [2][-]{subsection.A.5}{Experimental Startup}{appendix.A}% 90
+\BOOKMARK [2][-]{subsection.A.6}{Common Configurations}{appendix.A}% 91
+\BOOKMARK [3][-]{subsubsection.A.6.1}{Memcached}{subsection.A.6}% 92
+\BOOKMARK [3][-]{subsubsection.A.6.2}{Memtier}{subsection.A.6}% 93

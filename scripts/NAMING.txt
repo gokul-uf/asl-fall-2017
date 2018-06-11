@@ -1,0 +1,9 @@
+split on _ then on -
+
+so attr1-val1_attr2-val2_attr3-val3.json
+
+TODO
+1. add HOSTNAME to the files generated form memtier on multiple VMs
+
+NOTE
+1. Don't forget to change the ratio from 1:0 (for write only) to 0:1 for read-only
